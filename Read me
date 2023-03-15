@@ -2,4 +2,6 @@
 1) Add this in head
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
-2) In progress
+2) Add HTML embeb before submit code of "forms.html"
+
+3) Call forms.js
