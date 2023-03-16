@@ -6,5 +6,4 @@ https://github.com/The-Branx/forms/blob/main/forms.html
 [PLEASE ENTER ROUTE OR PARAMETER HERE] -> /success OR ?success=true
 
 2) Call forms.js, add this code to before </body> tag
-<script src="https://cdn.jsdelivr.net/gh/The-Branx/forms/forms.min.js"></script>
-
+<script src="hhttps://cdn.jsdelivr.net/gh/The-Branx/forms@main/forms.min.js"></script>
