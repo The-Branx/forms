@@ -32,6 +32,8 @@ $(document).ready(function () {
     $('input[name="lang-url"], #lang-url').val(langUrl);
     // honeypot
     $("#Privacy-Check").hide();
+    //fills Url
+    $('#OriginUrl').val(window.location.href);
 });
 
 // Selects default texts of dropdown input
