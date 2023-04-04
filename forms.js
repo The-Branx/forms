@@ -4,7 +4,7 @@ $(document).on('submit', 'form', function () {
         $('html, body').animate({
             scrollTop: $('.w-form-done').offset().top
         }, 600); //
-    }, 500);
+    }, 550);
     setTimeout(function () {
     if (window.cookiehub.hasConsented("marketing")) {
         console.log('Marketing category is allowed');
