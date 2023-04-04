@@ -5,6 +5,11 @@ $(document).on('submit', 'form', function () {
             scrollTop: $('.w-form-done').offset().top
         }, 400); //
     }, 500);
+    if (window.cookiehub.hasConsented("marketing")) {
+        console.log('Marketing category is allowed');
+        let email_address = $("input[name='email']").val();
+        sendinblue.identify(email_address);
+    }
 });
 
 // Dynamic params to inputs
