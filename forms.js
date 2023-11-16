@@ -29,14 +29,6 @@ $(document).ready(function () {
         var element = $('[name="' + key + '"]:not([type="checkbox"])');
         element.val(value);
     }
-    // stores language
-    var langUrl = window.location.hostname.split('.')[0];
-    if (!langUrl || langUrl === 'www' || langUrl === 'thebranx') {
-        langUrl = 'en';
-    } else {
-        langUrl = langUrl.toLowerCase();
-    }
-    $('input[name="lang-url"], #lang-url').val(langUrl);
     // honeypot
     $("#Privacy-Check").hide();
     //fills Url
