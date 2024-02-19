@@ -6,8 +6,8 @@ $(document).on('submit', 'form', function () {
         }, 600); //
     }, 550);
     setTimeout(function () {
-    if (window.cookiehub.hasConsented("marketing")) {
-        console.log('Marketing category is allowed');
+        if (this.hasConsented('analytics')) {
+        console.log('The analytics category is allowed');
         let email_address = $("input[name='email']").val();
         sendinblue.identify(email_address);
         analytics.identify(null, {email: email_address});
