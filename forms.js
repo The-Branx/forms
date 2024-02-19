@@ -10,6 +10,8 @@ $(document).on('submit', 'form', function () {
         console.log('Marketing category is allowed');
         let email_address = $("input[name='email']").val();
         sendinblue.identify(email_address);
+        analytics.identify(null, {email: email_address});
+        analytics.track('ContactForm');
     }
     }, 13000);
 });
