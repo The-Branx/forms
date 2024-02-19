@@ -6,7 +6,7 @@ $(document).on('submit', 'form', function () {
         }, 600); //
     }, 550);
     setTimeout(function () {
-        if (this.hasConsented('analytics')) {
+        if (window.cookiehub.hasConsented("analytics")) {
         console.log('The analytics category is allowed');
         let email_address = $("input[name='email']").val();
         const formDataName = document.querySelector('form').getAttribute('data-name');
