@@ -9,9 +9,10 @@ $(document).on('submit', 'form', function () {
         if (this.hasConsented('analytics')) {
         console.log('The analytics category is allowed');
         let email_address = $("input[name='email']").val();
+        const formDataName = document.querySelector('form').getAttribute('data-name');
         sendinblue.identify(email_address);
         analytics.identify(null, {email: email_address});
-        analytics.track('ContactForm');
+        analytics.track(formDataName);
     }
     }, 13000);
 });
