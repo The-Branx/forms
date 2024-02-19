@@ -14,7 +14,7 @@ $(document).on('submit', 'form', function () {
         analytics.identify(null, {email: email_address});
         analytics.track(formDataName);
     }
-    }, 13000);
+    }, 1300);
 });
 
 // Dynamic params to inputs
