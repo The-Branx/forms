@@ -5,7 +5,8 @@ $(document).on('submit', 'form', function () {
     const formDataName = document.querySelector('form').getAttribute('data-name');
     setTimeout(function () {
         $('html, body').animate({
-            scrollTop: $('.w-form-done').offset().top
+            scrollTop: $('.w-form-done').offset().top;
+            $('.submit-trigger').click();
         }, 600); //
         
     }, 550);
