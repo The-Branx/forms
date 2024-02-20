@@ -6,7 +6,7 @@ $(document).on('submit', 'form', function () {
     setTimeout(function () {
         $('html, body').animate({
             scrollTop: $('.w-form-done').offset().top;
-            $('.submit-trigger').click();
+            $('.loading-trigger').click();
         }, 600); //
         
     }, 550);
