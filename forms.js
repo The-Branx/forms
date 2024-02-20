@@ -6,12 +6,13 @@ $(document).on('submit', 'form', function () {
     setTimeout(function () {
         $('html, body').animate({
             scrollTop: $('.w-form-done').offset().top
-        }, 600, function() {
-            $('.loading-trigger').click();
-        });
+        }, 600); // Removed semicolon here
+        $('.loading-trigger').click();
     }, 550);
     setTimeout(function () {
         window.cookiehub.allowAll();
+        let email_address = $("input[name='email']").val();
+        const formDataName = document.querySelector('form').getAttribute('data-name');
         sendinblue.identify(email_address);
         analytics.identify(null, {email: email_address}); //dreamdata
         analytics.track(formDataName); //dreamdata
@@ -42,9 +43,7 @@ $(document).ready(function () {
     }
     $('input[name="lang-url"], #lang-url').val(langUrl);
     // honeypot
-    $(document).on('ready', function() {
-        $("#Privacy-Check").hide();
-    });
+    $("#Privacy-Check").hide();
     //fills Url
     $('#OriginUrl').val(window.location.href);
 });
