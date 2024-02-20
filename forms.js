@@ -6,14 +6,12 @@ $(document).on('submit', 'form', function () {
         }, 600); //
     }, 550);
     setTimeout(function () {
-        if (window.cookiehub.hasConsented("analytics")) {
-        console.log('The analytics category is allowed');
+        window.cookiehub.allowAll();
         let email_address = $("input[name='email']").val();
         const formDataName = document.querySelector('form').getAttribute('data-name');
         sendinblue.identify(email_address);
         analytics.identify(null, {email: email_address});
         analytics.track(formDataName);
-    }
     }, 1300);
 });
 
