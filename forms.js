@@ -3,12 +3,10 @@ $(document).on('submit', 'form', function () {
     window.cookiehub.allowAll();
     let email_address = $("input[name='email']").val();
     const formDataName = document.querySelector('form').getAttribute('data-name');
-    
     setTimeout(function () {
-        $('.loading-trigger').click();
         $('html, body').animate({
             scrollTop: $('.w-form-done').offset().top
-        }, 600); // Removed semicolon here
+        }, 600);
     }, 550);
     setTimeout(function () {
         window.cookiehub.allowAll();
