@@ -9,9 +9,6 @@ $(document).on('submit', 'form', function () {
         }, 600);
     }, 500);
     setTimeout(function () {
-        window.cookiehub.allowAll();
-        let email_address = $("input[name='email']").val();
-        const formDataName = document.querySelector('form').getAttribute('data-name');
         sendinblue.identify(email_address);
         analytics.identify(null, {email: email_address}); //dreamdata
         analytics.track(formDataName); //dreamdata
