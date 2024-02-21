@@ -7,7 +7,7 @@ $(document).on('submit', 'form', function () {
         $('html, body').animate({
             scrollTop: $('.w-form-done').offset().top
         }, 600);
-    }, 550);
+    }, 500);
     setTimeout(function () {
         window.cookiehub.allowAll();
         let email_address = $("input[name='email']").val();
@@ -15,7 +15,7 @@ $(document).on('submit', 'form', function () {
         sendinblue.identify(email_address);
         analytics.identify(null, {email: email_address}); //dreamdata
         analytics.track(formDataName); //dreamdata
-    }, 2300);
+    }, 5500);
 });
 
 // Dynamic params to inputs
