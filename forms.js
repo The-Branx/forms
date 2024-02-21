@@ -10,8 +10,6 @@ $(document).on('submit', 'form', function () {
     }, 500);
     setTimeout(function () {
         sendinblue.identify(email_address);
-        analytics.identify(null, {email: email_address}); //dreamdata
-        analytics.track(formDataName); //dreamdata
     }, 5500);
 });
 
