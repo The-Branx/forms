@@ -10,7 +10,7 @@ $(document).on('submit', 'form', function () {
     }, 500);
     setTimeout(function () {
         sendinblue.identify(email_address);
-    }, 5500);
+    }, 8500);
 });
 
 // Dynamic params to inputs
