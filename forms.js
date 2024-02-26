@@ -1,4 +1,3 @@
-// Scrolls user to success message
 $(document).on('submit', 'form', function () {
     window.cookiehub.allowAll();
     let email_address = $("input[name='email']").val();
