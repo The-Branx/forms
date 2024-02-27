@@ -2,6 +2,9 @@ $(document).on('submit', 'form', function () {
     window.cookiehub.allowAll();
     let email_address = $("input[name='email']").val();
     const formDataName = document.querySelector('form').getAttribute('data-name');
+    gtag('set', 'user_data', {
+            "email": email_address
+    });
     setTimeout(function () {
         sendinblue.identify(email_address);
     }, 8500);
