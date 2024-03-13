@@ -2,6 +2,11 @@ $(document).on('submit', 'form', function () {
     let email_address = $("input[name='email']").val();
     const formDataName = document.querySelector('form').getAttribute('data-name');
     setTimeout(function () {
+        $('html, body').animate({
+            scrollTop: $('.w-form-done').offset().top - 200
+        }, 400); 
+    }, 500);
+    setTimeout(function () {
         window.cookiehub.allowAll();
     }, 2500);
     setTimeout(function () {
