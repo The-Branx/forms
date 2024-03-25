@@ -5,7 +5,7 @@ $(document).on('submit', 'form', function () {
         $('html, body').animate({
             scrollTop: $('.w-form-done').offset().top - 200
         }, 400); 
-    }, 500);
+    }, 1000);
     setTimeout(function () {
         window.cookiehub.allowAll();
     }, 2500);
