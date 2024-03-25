@@ -3,7 +3,7 @@ $(document).on('submit', 'form', function () {
     const formDataName = document.querySelector('form').getAttribute('data-name');
     setTimeout(function () {
         $('html, body').animate({
-            scrollTop: $('.w-form-done').offset().top - 200
+                scrollTop: $('[class*="w-form-done"]').offset().top - 200
         }, 400); 
     }, 1000);
     setTimeout(function () {
